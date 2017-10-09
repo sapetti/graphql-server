@@ -1,0 +1,20 @@
+{
+  "name": "graphql-server",
+  "scripts": {
+  },
+  "env": {
+    "DB_URL": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
