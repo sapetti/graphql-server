@@ -14,7 +14,7 @@ var app = koa();
 qs(app);
 
 if (process.env.NODE_ENV !== 'test') {
-  mongoose.connect('mongodb://localhost/graphql');
+  mongoose.connect(process.env.DB_URL || 'mongodb://localhost/graphql');
 }
 
 routes.get('/data', function* () {
